@@ -34,8 +34,7 @@ script:
   - npm run build
   # - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
   # - cp proxy-config.example.json proxy-config.json && npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
-
-cache:
-  # improve build time cache stuffs that do not change occasionally eg. node_modules
-  directories:
-    - node_modules/
+# cache:
+#   # improve build time cache stuffs that do not change occasionally eg. node_modules
+#   directories:
+#     - node_modules/
