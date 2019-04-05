@@ -2,26 +2,43 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [NodeJS v8.11.1+](https://nodejs.org)
+- [npm v5.6.0+](https://www.npmjs.com/)
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```sh
+    npm install --save @hisptz/ngx-dhis2-map
+```
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`WIP`
 
-## Running unit tests
+```js
+import {} from '@hisptz/ngx-dhis2-map';
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Environment
 
-## Running end-to-end tests
+## Test
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Clone this repository
 
-## Further help
+- Install all dependencies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```sh
+    npm install
+```
+
+- Then run test
+
+```sh
+    npm test
+```
+
+## Contribute
+
+## Licence
