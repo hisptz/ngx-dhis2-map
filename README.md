@@ -28,17 +28,20 @@ import { NgxDhis2MapModule } from '@hisptz/ngx-dhis2-map';
   providers: [],
   bootstrap: []
 })
+```
+Then include component 
 
-<hisptz-ngx-dhis2-map></hisptz-ngx-dhis2-map>
+```js
+<hisptz-ngx-dhis2-map></hisptz-ngx-dhis2-map>`
 ```
 
 ## Environment `(WIP)`
 
 ## Test
 
-- Clone this repository
+* Clone this repository
 
-- Install all dependencies
+* Install all dependencies
 
 ```sh
     npm install
