@@ -22,8 +22,13 @@
             "main": "example/src/main.ts",
             "polyfills": "example/src/polyfills.ts",
             "tsConfig": "example/tsconfig.app.json",
-            "assets": ["example/src/favicon.ico", "example/src/assets"],
-            "styles": ["example/src/styles.scss"],
+            "assets": [
+              "example/src/favicon.ico",
+              "example/src/assets"
+            ],
+            "styles": [
+              "example/src/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -78,16 +83,26 @@
             "polyfills": "example/src/polyfills.ts",
             "tsConfig": "example/tsconfig.spec.json",
             "karmaConfig": "example/karma.conf.js",
-            "styles": ["example/src/styles.scss"],
+            "styles": [
+              "example/src/styles.scss"
+            ],
             "scripts": [],
-            "assets": ["example/src/favicon.ico", "example/src/assets"]
+            "assets": [
+              "example/src/favicon.ico",
+              "example/src/assets"
+            ]
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["example/tsconfig.app.json", "example/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "example/tsconfig.app.json",
+              "example/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -113,7 +128,44 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ngx-dhis2-map": {
+      "root": "projects/ngx-dhis2-map",
+      "sourceRoot": "projects/ngx-dhis2-map/src",
+      "projectType": "library",
+      "prefix": "hisptz",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-dhis2-map/tsconfig.lib.json",
+            "project": "projects/ngx-dhis2-map/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-dhis2-map/src/test.ts",
+            "tsConfig": "projects/ngx-dhis2-map/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-dhis2-map/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-dhis2-map/tsconfig.lib.json",
+              "projects/ngx-dhis2-map/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
