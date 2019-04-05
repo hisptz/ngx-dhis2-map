@@ -13,15 +13,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     npm install --save @hisptz/ngx-dhis2-map
 ```
 
-## Usage
-
-`WIP`
+## Usage*(WIP)*
 
 ```js
 import {} from '@hisptz/ngx-dhis2-map';
 ```
 
-## Environment
+## Environment*(WIP)*
 
 ## Test
 
@@ -39,6 +37,6 @@ import {} from '@hisptz/ngx-dhis2-map';
     npm test
 ```
 
-## Contribute
+## Contribute*(WIP)*
 
-## Licence
+## Licence*(WIP)*
