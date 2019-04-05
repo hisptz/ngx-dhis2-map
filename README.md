@@ -32,8 +32,14 @@ import { NgxDhis2MapModule } from '@hisptz/ngx-dhis2-map';
 
 Then include component
 
-```js
-<hisptz-ngx-dhis2-map [visualizationLayers]='visualizationLayers' [id]='id' [visualizationConfig]="visualizationConfig" [visualizationUiConfig]="visualizationUiConfig" ></hisptz-ngx-dhis2-map>
+```html
+<hisptz-ngx-dhis2-map
+  [visualizationLayers]="visualizationLayers"
+  [id]="id"
+  [visualizationConfig]="visualizationConfig"
+  [visualizationUiConfig]="visualizationUiConfig"
+>
+</hisptz-ngx-dhis2-map>
 ```
 
 ## Environment `(WIP)`
