@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/hisptz/ngx-dhis2-map.svg?branch=master)](https://travis-ci.org/hisptz/ngx-dhis2-map)
+[![dependencies Status](https://david-dm.org/hisptz/ngx-dhis2-map/status.svg)](https://david-dm.org/hisptz/ngx-dhis2-map)
+[![devDependencies Status](https://david-dm.org/hisptz/ngx-dhis2-map/dev-status.svg)](https://david-dm.org/hisptz/ngx-dhis2-map?type=dev)
+
 # NgxDhis2Map
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
