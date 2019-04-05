@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hisptz/ngx-dhis2-map.svg?branch=master)](https://travis-ci.org/hisptz/ngx-dhis2-map)
+[![Build Status](https://travis-ci.org/hisptz/ngx-dhis2-map.svg?branch=develop)](https://travis-ci.org/hisptz/ngx-dhis2-map)
 [![dependencies Status](https://david-dm.org/hisptz/ngx-dhis2-map/status.svg)](https://david-dm.org/hisptz/ngx-dhis2-map)
 [![devDependencies Status](https://david-dm.org/hisptz/ngx-dhis2-map/dev-status.svg)](https://david-dm.org/hisptz/ngx-dhis2-map?type=dev) [![Greenkeeper badge](https://badges.greenkeeper.io/hisptz/ngx-dhis2-map.svg)](https://greenkeeper.io/)
 
