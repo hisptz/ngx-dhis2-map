@@ -117,6 +117,41 @@
           }
         }
       }
+    },
+    "ngx-dhis2-map": {
+      "root": "projects/ngx-dhis2-map",
+      "sourceRoot": "projects/ngx-dhis2-map/src",
+      "projectType": "library",
+      "prefix": "hisptz",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-dhis2-map/tsconfig.lib.json",
+            "project": "projects/ngx-dhis2-map/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-dhis2-map/src/test.ts",
+            "tsConfig": "projects/ngx-dhis2-map/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-dhis2-map/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["projects/ngx-dhis2-map/tsconfig.lib.json", "projects/ngx-dhis2-map/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
     }
   },
   "defaultProject": "example"
