@@ -1,24 +1,42 @@
 # NgxDhis2Map
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
-## Code scaffolding
+## Requirements
 
-Run `ng generate component component-name --project ngx-dhis2-map` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-dhis2-map`.
-> Note: Don't forget to add `--project ngx-dhis2-map` or else it will be added to the default project in your `angular.json` file. 
+- [NodeJS v8.11.1+](https://nodejs.org)
+- [npm v5.6.0+](https://www.npmjs.com/)
 
-## Build
+## Installation
 
-Run `ng build ngx-dhis2-map` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+    npm install --save @hisptz/ngx-dhis2-map
+```
 
-## Publishing
+## Usage*(WIP)*
 
-After building your library with `ng build ngx-dhis2-map`, go to the dist folder `cd dist/ngx-dhis2-map` and run `npm publish`.
+```js
+import {} from '@hisptz/ngx-dhis2-map';
+```
 
-## Running unit tests
+## Environment*(WIP)*
 
-Run `ng test ngx-dhis2-map` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Test
 
-## Further help
+- Clone this repository
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Install all dependencies
+
+```sh
+    npm install
+```
+
+- Then run test
+
+```sh
+    npm test
+```
+
+## Contribute*(WIP)*
+
+## Licence*(WIP)*
