@@ -45,8 +45,3 @@ script:
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-
-cache:
-  # improve build time cache stuffs that do not change occasionally eg. node_modules
-  directories:
-    - node_modules/
