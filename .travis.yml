@@ -1,5 +1,10 @@
 sudo: required
 dist: trusty
+
+env:
+  global:
+    - CC_TEST_REPORTER_ID=0cd5e7ba899a6ce35cb29eb94ea4f72648996c583b00950c8e1a43bc64ba871b
+
 language: node_js
 node_js:
   - '10.4.1'
@@ -23,6 +28,9 @@ before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 
 install:
   - pushd $TRAVIS_BUILD_DIR
@@ -32,9 +40,13 @@ install:
 
 script:
   - npm run build
-  # - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+  - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
   # - cp proxy-config.example.json proxy-config.json && npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
-# cache:
-#   # improve build time cache stuffs that do not change occasionally eg. node_modules
-#   directories:
-#     - node_modules/
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+cache:
+  # improve build time cache stuffs that do not change occasionally eg. node_modules
+  directories:
+    - node_modules/

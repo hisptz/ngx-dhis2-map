@@ -1,0 +1,3 @@
+exclude_patterns:
+  - 'e2e'
+  - '**/*.spec.ts'

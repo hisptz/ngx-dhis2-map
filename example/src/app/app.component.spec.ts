@@ -1,12 +1,12 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { NgxDhis2MapModule } from '@hisptz/ngx-dhis2-map';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      imports: [NgxDhis2MapModule],
+      declarations: [AppComponent]
     }).compileComponents();
   }));
 
@@ -26,6 +26,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to example!');
+    expect(compiled.querySelector('hisptz-ngx-dhis2-map').innerText).toContain('ngx-dhis2-map works!');
   });
 });
