@@ -14,7 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Installation
 
 ```sh
-    npm install --save @hisptz/ngx-dhis2-map
+npm install --save @hisptz/ngx-dhis2-map
 ```
 
 ## Usage `(WIP)`
@@ -51,13 +51,13 @@ Then include component
 - Install all dependencies
 
 ```sh
-    npm install
+npm install
 ```
 
 - Then run test
 
 ```sh
-    npm test
+npm test
 ```
 
 ## Contribute `(WIP)`
