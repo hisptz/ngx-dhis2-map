@@ -16,7 +16,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Usage `(WIP)`
 
 ```js
-import {} from '@hisptz/ngx-dhis2-map';
+import { NgxDhis2MapModule } from '@hisptz/ngx-dhis2-map';
+
+@NgModule({
+  declarations: [],
+  imports: [NgxDhis2MapModule],
+  providers: [],
+  bootstrap: []
+})
+
+<hisptz-ngx-dhis2-map></hisptz-ngx-dhis2-map>
 ```
 
 ## Environment `(WIP)`
